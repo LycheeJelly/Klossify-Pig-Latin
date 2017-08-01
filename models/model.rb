@@ -63,7 +63,7 @@ end
 
 
 def klossify(phrase)
-  phrase.gsub("c","k").gsub("C","K")
+  phrase.gsub("c","k").gsub("C","K")+"!!!"
 end
 
 
@@ -81,7 +81,7 @@ end
          consonants << word[0]
          word = word.split("")[1..-1].join
        end
-       word + consonants + 'ay'
+       return word + consonants + 'ay'
    end
  end
  
